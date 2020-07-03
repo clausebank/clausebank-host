@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">      
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>  
+  <link href="https://fonts.googleapis.com/css?family=Dekko" rel="stylesheet">
+
+
+        <script type="text/javascript">
+    jQuery(document).ready(function(){
+   $('h1').mousemove(function(e){
+     var rXP = (e.pageX - this.offsetLeft-$(this).width()/2);
+     var rYP = (e.pageY - this.offsetTop-$(this).height()/2);
+     $('h1').css('text-shadow', +rYP/10+'px '+rXP/80+'px rgba(227,6,19,.8), '+rYP/8+'px '+rXP/60+'px rgba(255,237,0,1), '+rXP/70+'px '+rYP/12+'px rgba(0,159,227,.7)');
+   });
+});
+    </script>
+
+    <style>
+        html, body {
+            margin: 0;
+            width: 100%;
+            font-family: 'Dekko', cursive;
+            font-size: 110%;
+            background:#fff;
+        }
+        h1{
+            text-transform:uppercase;
+            font-size: 10vw;
+            font-family:'Verdana';
+           text-align:center;
+        }
+
+        h2, h3, h4{
+          
+          font-weight: bold;
+        }
+
+        @-webkit-keyframes rodar {
+            from {
+              -webkit-transform:rotate(0deg);
+            }
+            to {
+              -webkit-transform:rotate(360deg);
+            }
+          }
+
+        @-moz-keyframes rodar {
+            from {
+              -webkit-transform:rotate(0deg);
+            }
+            to {
+              -webkit-transform:rotate(360deg);
+            }
+          }
+
+        @-o-keyframes rodar {
+            from {
+              -webkit-transform:rotate(0deg);
+            }
+            to {
+              -webkit-transform:rotate(360deg);
+            }
+          }
+
+        @-ms-keyframes rodar {
+            from {
+              -webkit-transform:rotate(0deg);
+            }
+            to {
+              -webkit-transform:rotate(360deg);
+            }
+          }
+
+
+    </style> 
+
+</head>
+
+<body>
+    
+    
+      <h1>CLAUSEBANK</h1>
+      <div class="container">
+      <p>--This is a proof of concept--</p>
+    
+
+      <div class="well">
+        <!-- <h2>Get started</h2> -->
+        <ul class="nav nav-pills nav-justified">
+          <li><a data-toggle="pill" href="#desktop">Word Desktop</a></li>
+          <li><a data-toggle="pill" href="#online">Office 365 / Word Online</a></li>
+        </ul>
+      
+
+      <div class="tab-content">
+        <div id="desktop" class="tab-pane fade">
+          <h3>How to install Mistral on Microsoft&copy; Word Desktop</h3>
+          
+          <h4>Specify the shared folder as a trusted catalog</h4>
+          <ol>
+            <li>Open Microsoft&copy; Word.</li>
+            <li>Choose the <b>File</b> tab, and then choose <b>Options</b>.</li>
+            <li>Choose <b>Trust Center</b>, and then choose the <b>Trust Center Settings</b> button.</li>
+            <li>Choose <b>Trusted Add-in Catalogs</b>.</li>
+            <li>In the <b>Catalog Url</b> box, enter the full network path to the shared folder catalog: <b><u>\\LNGOXFAPPD009V\Mistral\</u></b></li>
+            <li>Choose <b>Add Catalog</b>.</li>
+            <li>Select the <b>Show in Menu</b> check box, and then choose <b>OK</b>.</li>
+            <br/>
+            <img src="images/trustdialog.jpg"/>
+            <br/>
+            <br/>
+            <li>Close the application so your changes will take effect.</li>
+          </ol>
+
+          
+          
+          <h4>Load the add-in</h4>
+          <ol>
+            <li>Re-open Microsoft&copy; Word.</li>
+            <li>Select <b>My Add-ins</b> on the <b>Insert</b> tab of the ribbon.</li>
+            <li>Choose <b>SHARED FOLDER</b> at the top of the Office Add-ins dialog box.</li>
+            <li>Select the name of the add-in (“Clausebank”) and choose <b>OK</b> to insert the add-in.</li>
+          </ol>
+
+        </div>
+        <div id="online" class="tab-pane fade">
+          <h3>How to install Mistral on Microsoft&copy; Word Online</h3>
+          <ol>
+              <li>Open Microsoft&copy; Word Online.</li>
+              <li>Select <b>Office Add-ins</b> on the <b>Insert</b> tab of the ribbon.</li>
+              <li>Choose <b>Upload My Add-in</b> in the top-right of the dialog.</li>
+              <li>Choose <b>Browse…</b></li>
+              <li>Enter: <b><u>https://raw.githubusercontent.com/clausebank/clausebank.github.io/master/clausebank.xml</u></b></li>
+              <li>Choose <b>Upload</b>.</li>
+            </ol>
+        </div>
+   
+      </div>
+
+     
+    
+    </div>
+     <p style="float: right;">For support and feedback email <a href="mailto:leo.seccia@lexisnexis.co.uk?Subject=Mistral" target="_top">Leo</a></p>  
+    </div>
+</body>
+
+</html>
